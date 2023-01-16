@@ -7,6 +7,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.grey{
+  color: #918E9B;
+}
+
+.bold{
+  font-weight: bold;
+}
+
 .nav{
   height: 70px;
   display: flex;
@@ -37,6 +45,45 @@ section{
   margin-bottom: 16px;
 }
 
+.card{
+  width: 175px;
+  font-size: 12px;
+}
+
+.card--image{
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card--rating{
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.card--star{
+  height: 14px;
+}
 
 
 
+.card--rating > *{
+  margin: 0 2px;
+}
+
+.card--text{
+  font-size: 12px;
+}
+
+.card--price{
+  display: flex;
+  font-size: 12px;
+}
+
+.card--price>:first-child{
+  font-weight: 600;
+}
+
+.card--price > span{
+  margin: 0 2px;
+}
