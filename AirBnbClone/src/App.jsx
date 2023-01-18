@@ -10,19 +10,14 @@ function App() {
     return(
       <Card
         key={item.id}
-      img={`./images/${item.coverImg}`}
-      rating={item.stats.rating}
-      reviewCount={item.stats.reviewCount}
-      country={item.location}
-      title={item.title}
-      price={item.price}
+        {...item}
     />
   )})
 
   return (
     <div className="App">
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
       <section className='card-list'>
         {dataMap}
       </section>
